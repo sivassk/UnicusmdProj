@@ -1,0 +1,95 @@
+<ion-view view-title="Patient Address">
+
+  <ion-content>
+
+   
+   <!--<img src="img/patients1.png" class="patient-img img-border">-->
+<div ng-repeat="contact in contacts">
+	<input type ="text" ng-model="add.fname" value="contact.fname">
+        <div class="row"><div class="col-33">Patient Name</div><div class="col-33">:{{contact.fname}}</div></div>
+		
+	    <div class="row"> <div class="col-33">Patient ID</div><div class="col-33">:{{contact.id}}</div></div>
+	    <div class="row"><div class="col-33">Age</div><div class="col-33">:{{contact.age}} </div></div>
+	   <!-- <div class="row"><div class="col-33">Address</div><div class="col-33">:{{contact.add}}</div></div> -->
+	
+  <!--   <div class="patient-id"><div class="form-rowname">Patient ID </div> <div class="form-rownameone">: 125545</div></div>
+     <div class="patient-age"><div class="form-rowname">Age </div> <div class="form-rownameone">: 34</div></div>
+     <div class="patient-msg"><div class="form-rowname">Address</div> <div class="form-rownameone">: Halsted road,Apt#214,Farmington Hills, MI-48335</div></div>-->
+
+
+  
+
+   <div class="item item-divider">
+            Patient Details
+          </div>
+
+          <div class="padding">
+ 
+    <div class=" table-header">
+ <div class="row">
+  <div class="col-20"></div>
+  <div class="col-80">Shipping Address</div>
+  
+</div></div>
+
+<div class=" table-body">
+ <div class="row">
+  <div class="col-20">Address</div>
+  <div class="col-80">:{{contact.add}}, {{contact.city}}, {{contact.state}}-{{contact.zip}} </div>
+ 
+</div></div>
+
+ 
+   <div class="table-header">
+ <div class="row">
+  <div class="col-10">Sno</div>
+  <div class="col-50">Medicine</div>
+  <div class="col-20">Dosage</div>
+<div class="col-20">Days</div>
+  <div class="col-20"></div>
+</div></div>
+<div class=" table-body">
+ <div class="row">
+  <div class="col-10">1</div>
+  <div class="col-50">{{contact.medname}} </div>
+  <div class="col-20">{{contact.dosage}}</div>
+
+  <div class="col-20">{{contact.days}}</div>
+</div>
+
+<!--<div class="row">
+  <div class="col-10">2</div>
+  <div class="col-50">paracetamol </div>
+  <div class="col-20">100 mg</div>
+
+  <div class="col-20">10 tablets</div>
+</div>
+<div class="row">
+  <div class="col-10">3</div>
+  <div class="col-50">paracetamol </div>
+  <div class="col-20">150 mg</div>
+
+  <div class="col-20">10 tablets</div>
+</div>
+<div class="row">
+  <div class="col-10">4</div>
+  <div class="col-50">paracetamol </div>
+  <div class="col-20">20 mg</div>
+
+  <div class="col-20">90 tablets</div>
+</div>-->
+
+
+</div>
+
+</div> </div><div class="buttons-row">
+</div><div class="row">
+  <div class="col">
+  <button class="button button-block button-balanced" ng-click="done()"> Done </button></div>
+<div class="col">
+<button class="button button-block button-balanced" ng-click="cancel()"> Cancel</button></div>
+
+</div>
+
+  </ion-content>
+</ion-view>

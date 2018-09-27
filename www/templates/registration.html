@@ -1,0 +1,60 @@
+<ion-view view-title="Register" name="login-view">
+  <ion-content  style="background: url(img/login.jpg) center; background-size: cover;">
+
+      <div class="padding formtop">
+      <div class="row  form-bottom">
+          <div class="col-10 green">
+         <i class="icon ion-person"></i>
+         </div>
+          <div class="col col-90 logininput">
+         <input type="text" placeholder="First Name">
+         </div>
+         </div>
+
+          <div class="row form-bottom">
+           <div class="col-10 green">
+           <i class="icon ion-person"></i>
+           </div>
+          <div class="col col-90 logininput">
+          <input type="text" placeholder="Last Name">
+
+         </div>
+         </div>
+
+         <div class="row form-bottom">
+           <div class="col-10 green">
+           <i class="icon ion-ios-email"></i>
+           </div>
+          <div class="col col-90 logininput">
+          <input type="text" placeholder="Email">
+
+         </div>
+         </div>
+
+          <div class="row form-bottom">
+           <div class="col-10 green">
+           <i class="icon ion-android-lock"></i>
+           </div>
+          <div class="col col-90 logininput">
+          <input type="password" placeholder="Password"  ng-model="data.password">
+
+         </div>
+         </div>
+                   <div class="row form-bottom">
+           <div class="col-10 green">
+           <i class="icon ion-android-lock"></i>
+           </div>
+          <div class="col col-90 logininput">
+          <input type="password" placeholder="Re - Password"  ng-model="data.password">
+
+         </div>
+         </div>
+            <button class="button button-block button-balanced" ui-sref="tab.dash"> Register </button>
+       </div>
+  </ion-content>
+<ion-footer-bar align-title="center" class="bar bar-footer bar-light">
+
+  <div class="title" ui-sref="login">Do You have account ? Login Now!</div>
+</ion-footer-bar>
+
+</ion-view>

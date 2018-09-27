@@ -1,0 +1,18 @@
+<ion-view view-title="Upcoming Appointments">
+<ion-content>
+    <ion-list>
+	<!-- href="#/tab/appointments/{{patient.id}}" -->
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="patient in patients" type="item-text-wrap" >
+        <img ng-src="{{patient.face}}" class="patient-img">
+        <h2 class="patient-name">{{patient.name}}</h2>
+        <p class="patient-id">Patient ID : {{patient.PatientID}}</p>
+        <p class="patient-age">Age : {{patient.Age}}</p>
+        <p class="patient-msg">Date/Time : {{patient.date}}</p>
+         <!--<i class="icon ion-more"></i>
+       <ion-option-button class="button-assertive" ng-click="remove(patient)">
+          Delete
+        </ion-option-button> -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

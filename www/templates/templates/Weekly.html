@@ -1,0 +1,69 @@
+<ion-view view-title="Weekly Appointments">
+  <ion-content>
+
+
+ <div class="card noshadow ">
+  
+      <div class="item-divider green nopadding h50" ng-click="showAlert()">
+    <div class="row "> <div class="col text-right ">  <i class="ion-chevron-left "></i></div>  
+    <div class="col col-80 text-center"> August 20, 2016</div> <div class="col text-left"> <i class="ion-chevron-right "></i> </div></div>
+  </div>
+
+ <div class=" appoinment-box text-green" ng-click="showAlert()">
+  <div class="row"> <div class="col-75">Sunday</div>  </div> </div>
+
+ 
+
+     <div class=" appoinment-box" ng-click="showAlert()">
+  <div class="row"> <div class="col-75">Monday</div>  </div> </div>
+
+  <div class=" appoinment-box ">
+   
+   <div class="row"> <div class="col-67">Tuesday</div>  </div></div>
+
+    <div class=" appoinment-box">
+    <div class="row">  <div class="col-67">wednesday</div>  </div></div>
+      <div class=" appoinment-box">  <div class="row"> <div class="col-67">Thursday</div>  </div></div>
+    <div class=" appoinment-box">
+    <div class="row"><div class="col-67">Friday</div>  </div></div>
+
+
+ <div class=" appoinment-box">
+    <div class="row"> <div class="col-67">Saturday</div>  </div></div>
+  </div>
+ 
+
+
+<div class="padding">
+
+  <button class="button button-block button-balanced">
+  Block Appoinment
+</button>
+
+</div>
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar bar-footer bar-light">
+
+  <div class="row nopadding">
+<div class="col nopadding" lign-title="center">
+     <a class="item item-icon-left boxpadding noborder one" ui-sref="appoiment">
+    <i class="icon ion-android-calendar light-gray" ></i>
+ 
+   </a>
+</div>
+<div class="col nopadding">
+  
+   <a class="item item-icon-left boxpadding noborder one" ui-sref="weekly">
+    <i class="icon ion-ios-calendar light-gray"></i>
+   
+  </a>
+  </div>
+  <div class="col nopadding">
+   <a class="item item-icon-left boxpadding noborder one" ui-sref="monthly">
+    <i class="icon ion-calendar light-gray"></i>
+ 
+
+  </a></div>
+</div>
+</ion-footer-bar>
+</ion-view>

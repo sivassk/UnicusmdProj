@@ -1,0 +1,72 @@
+<ion-view view-title="{{patient.name}}">
+
+
+  <ion-content>
+
+   <ion-item class="item-remove-animate item-avatar item-icon-right"  >
+   <img src="{{patient.face}}" class="patient-img img-border">
+
+     <h2 class="patient-name">{{patient.name}}</h2>
+     <p class="patient-id"><div class="form-row">Patient ID </div> <div class="form-row ">:{{patient.PatientID}}</div></p>
+     <p class="patient-age"><div class="form-row">Age </div> <div class="form-row">: {{patient.Age}}</div></p>
+     <p class="patient-msg"><div class="form-row">Gender</div> <div class="form-row">:{{patient.gender}}</div></p>
+
+
+   </ion-item>
+ <div class="item item-divider">
+           Add Patient Details
+          </div>
+
+          <div class="card">
+ <!-- <div class="item-divider">
+    <div class="row"> <div class="col text-right">  <i class="ion-chevron-left "></i></div>  <div class="col col-80 text-center"> March 20, 2017</div> <div class="col text-left"> <i class="ion-chevron-right "></i> </div></div>
+  </div> -->
+  <div class="item item-text-wrap">
+   Consultation Summary:
+  <textarea placeholder="Comments" class="textarea">John Suffering with fever from past 2 days.
+</textarea>
+  </div>
+  <div class="item item-text-wrap">
+   Diagnosis:
+  <textarea placeholder="Comments" class="textarea"> John Suffering with Viral fever Prescribed required medicine.
+  </textarea>
+  </div>
+  <div class="item item-text-wrap">
+   Medicine Prescribed:
+   <div class=" table-header">
+ <div class="row">
+  <div class="col-10">Sno</div>
+  <div class="col-33">Medicine</div>
+  <div class="col-33">Usage</div>
+
+  <div class="col-20">Schedule</div>
+</div></div>
+<div class=" table-body">
+ <div class="row">
+  <div class="col-10">1</div>
+  <div class="col-33">paracetamol </div>
+  <div class="col-33">Twice a day</div>
+
+  <div class="col-20"><icon class="ion-ios-close-outline"></icon></div>
+</div>
+ <div class="row">
+  <div class="col-10">2</div>
+  <div class="col-33">lbuprofen</div>
+  <div class="col-33">Once a day</div>
+
+  <div class="col-20"><icon class="ion-ios-checkmark-outline"></icon></div>
+</div>
+</div>
+  </div>
+  <div class="item item-text-wrap">
+   Patient Reported::
+  <textarea placeholder="Comments" class="textarea"> Prescribed on 12/25 Reported skin rashes with ibuprofen twice on medicine since week</textarea>
+  </div>
+
+
+</div>
+
+
+
+  </ion-content>
+</ion-view>

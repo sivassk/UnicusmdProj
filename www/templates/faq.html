@@ -1,0 +1,46 @@
+<ion-view view-title="FAQ">
+
+<!-- <ion-nav-buttons side="left">
+    <a ng-click="goBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+        <i class="ion-android-arrow-back"" id="customArrow"></i>
+    </a>
+</ion-nav-buttons>-->
+
+
+  
+<ion-header-bar class="bar-light bar-subheader" >
+
+      <input type="search"
+             placeholder="Search Questions..."
+             ng-model="search"
+             ng-focus="searchFocused = true"
+             ng-blur="searchFocused = false"
+             ng-change="scrollTop()"
+             class="full-width">
+			 
+     <!-- <button ng-if="search.length"
+              class="button button-icon ion-android-close input-button"
+              ng-click="clearSearch()"> 
+      </button>-->
+	</div>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item 
+           ng-repeat="question in questions | filter:search" href="#/tab/analytics/{{question.id}}">
+
+         {{question.question}}
+		 
+        </ion-item>
+      </ion-list>
+	  <!--<ion-card ng-hide="qashow">
+  <ion-card-header>
+    Header
+  </ion-card-header>
+  <ion-card-content>
+    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+  </ion-card-content>
+</ion-card>-->
+	
+    </ion-content>
+</ion-view>

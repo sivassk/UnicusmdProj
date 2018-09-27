@@ -1,0 +1,11 @@
+{
+  "name": "unicusMD",
+  "integrations": {},
+  "pro_id": "8a46dad1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

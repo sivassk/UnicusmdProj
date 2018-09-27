@@ -1,0 +1,38 @@
+<ion-view view-title="Patients">
+  <ion-content>
+    <div class="row divider">
+      <div class="col col-33 padding">
+         <div class="doc-dash divider-bottom">1286</div>
+         <div class="doc-dash-text">Patients Prescribed</div>
+      </div>
+      <div class="col col-33 padding">
+        <div class="doc-dash-report divider-bottom">1234</div>
+        <div class="doc-dash-text">Patients Reported</div>
+      </div>
+      <div class="col col-33 padding">
+        <div class="doc-dash-report divider-bottom">9086</div>
+        <div class="doc-dash-text">Ibuprofen Reported</div>
+      </div>
+
+   </div>
+ <hr>
+ <ion-list>
+   <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="patient in patients" type="item-text-wrap" href="#/tab/patients/{{patient.id}}">
+     <img ng-src="{{patient.face}}" class="patient-img">
+     <h2 class="patient-name">{{patient.name}}</h2>
+     <p class="patient-id">Patient ID : {{patient.PatientID}}</p>
+     <p class="patient-age">Age : {{patient.Age}}</p>
+    <!-- <p class="patient-msg">Message : {{patient.message}}</p> -->
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     <ion-option-button class="button-assertive" ng-click="remove(patient)">
+       Delete
+     </ion-option-button>
+   </ion-item>
+ </ion-list>
+
+
+
+ </div>
+<!--<button ng-controller="Action" ng-click="showActionsheetDoc()" style="opacity: 1; box-shadow: 0px 0px 10px transparent; transform: translate3d(0%, 0px, 0px);" nav-view="active" id="fab-profile" class="button button-fab button-fab-bottom-right button-energized-900 pane"><i class="icon ion-plus"></i></button>-->
+  </ion-content>
+</ion-view>

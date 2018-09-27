@@ -1,0 +1,83 @@
+<ion-view view-title="Patients">
+  <ion-content>
+   
+ <!--<ion-list>
+   <ion-item class="item-remove-animate item-avatar item-icon-right"  type="item-text-wrap" >
+   <img src="img/ben.png" class="patient-img">
+     
+     <h2 class="patient-name">Ben Sparrow</h2>
+     <p class="patient-id">Patient ID : 125543</p>
+     <p class="patient-age">Age : 20</p>
+     <p class="patient-msg">Address : Halsted road,Apt #214Apt #214</p>
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     
+   </ion-item>
+     <ion-item class="item-remove-animate item-avatar item-icon-right"  type="item-text-wrap" >
+   <img src="img/patients1.png" class="patient-img">
+     
+     <h2 class="patient-name">Ben Sparrow</h2>
+     <p class="patient-id">Patient ID : 125543</p>
+     <p class="patient-age">Age : 20</p>
+     <p class="patient-msg">Address : Halsted road,Apt #214Apt #214</p>
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     
+   </ion-item>
+    <ion-item class="item-remove-animate item-avatar item-icon-right"  type="item-text-wrap" >
+   <img src="img/patients2.png" class="patient-img">
+     
+     <h2 class="patient-name">Ben Sparrow</h2>
+     <p class="patient-id">Patient ID : 125543</p>
+     <p class="patient-age">Age : 20</p>
+     <p class="patient-msg">Address : Halsted road,Apt #214Apt #214</p>
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     
+   </ion-item>
+    <ion-item class="item-remove-animate item-avatar item-icon-right"  type="item-text-wrap" >
+   <img src="img/patients3.png" class="patient-img">
+     
+     <h2 class="patient-name">Ben Sparrow</h2>
+     <p class="patient-id">Patient ID : 125543</p>
+     <p class="patient-age">Age : 20</p>
+     <p class="patient-msg">Address : Halsted road,Apt #214Apt #214</p>
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     
+   </ion-item>
+   <ion-item class="item-remove-animate item-avatar item-icon-right"  type="item-text-wrap" >
+   <img src="img/perry.png" class="patient-img">
+     
+     <h2 class="patient-name">Ben Sparrow</h2>
+     <p class="patient-id">Patient ID : 125543</p>
+     <p class="patient-age">Age : 20</p>
+     <p class="patient-msg">Address : Halsted road,Apt #214Apt #214</p>
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     
+   </ion-item>
+   <ion-item class="item-remove-animate item-avatar item-icon-right"  type="item-text-wrap" >
+   <img src="img/patients3.png" class="patient-img">
+     
+     <h2 class="patient-name">Ben Sparrow</h2>
+     <p class="patient-id">Patient ID : 125543</p>
+     <p class="patient-age">Age : 20</p>
+     <p class="patient-msg">Address : Halsted road,Apt #214Apt #214</p>
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     
+   </ion-item>
+ </ion-list> -->
+ 
+ <ion-list>
+   <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="patient in patients" type="item-text-wrap" href="#/pharmacy/patients/{{patient.id}}">
+     <img ng-src="{{patient.face}}" class="patient-img">
+     <h2 class="patient-name">{{patient.name}}</h2>
+     <p class="patient-id">Patient ID : {{patient.PatientID}}</p>
+     <p class="patient-age">Age : {{patient.Age}}</p>
+     <p class="patient-msg">Message : {{patient.message}}</p>
+     <i class="icon ion-chevron-right icon-accessory"></i>
+     
+   </ion-item>
+ </ion-list>
+
+
+
+ </div>
+  </ion-content>
+</ion-view>

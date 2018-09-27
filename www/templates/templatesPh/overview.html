@@ -1,0 +1,35 @@
+  <!-- <div class="boxone"> <div class="colw50"> 
+   <h1>Acne </h1>
+   <p>The most common types of medicines that doctors use to treat acne include: Benzoyl peroxide, such as Brevoxyl or Triaz.</p></div> 
+   <div class="colw21">
+   <p class="pad5">25-34<p> <p> Patient Age Group </p>
+   </div>
+   <br>
+   <div class="colw21"> <p class="pad4 ">50%<p> <p>Average Visits</p> </div>
+   </div>
+   <div class="boxone">
+   <div class="colw30 f-l border-right"><p class="fo">Erythromycin<p> <p> High Satisfaction</p></div> <div class="colw30 border-right"><p class="pad10">Brevoxyl</p> <p>More Prescribed</p></div><div class="colw30 f-l border-right"><p class="pad5">1.8<p> <p> Other Doctor visits</p></div>
+    
+   </div>-->
+   
+   <div class="list ">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search"  ng-model="search">
+  </label>
+</div>
+    <div style="width:100%">
+	
+	<div class="onepatient" ng-repeat="patient in patients | filter:search" ng-click="showAlert(patient.name)">
+	<div class="row  divider-bottom "  type="item-text-wrap">
+
+      <div class="col col-25">
+          <img ng-src="{{patient.face}}"  class="img-responsive img-border">
+      </div>
+    <div class="col col-75 appoint-text">
+      <div class="noti-text">{{patient.name}}</div>
+      <div class="noti-msg">Doctor ID : {{patient.PatientID}}</div>
+      <div class="noti-time">Age : {{patient.Age}}</div>
+    </div>
+  </div></div>
+  </div>

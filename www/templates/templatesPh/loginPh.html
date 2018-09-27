@@ -1,0 +1,43 @@
+<ion-view view-title="Login" name="login-view">
+    <ion-content  style="background: url(pharmacy/img/pharma.jpg) center; background-size: cover;">
+
+       <div class="no-header flat">
+            <div class="content">
+                <div class="applogo"></div>
+            </div>
+        </div>
+		<form name="myForm">
+		 
+      <div class="padding ">
+      <center><span id="phErr" class="red"></span></center>
+       <div class="row  form-bottom">
+          <div class="col-10 green">
+         <i class="icon ion-person"></i>
+         </div>
+          <div class="col col-90 logininput">
+          <input name="username" placeholder="username" ng-model="phform.username"  type="text" required>
+         </div>
+         </div>
+		 <div ng-show="myForm.username.$touched && myForm.username.$invalid" class="red">The username is required.</div>
+
+          <div class="row  form-bottom">
+          <div class="col-10 green">
+         <i class="icon ion-android-lock"></i>
+         </div>
+          <div class="col col-90 logininput">
+         <input name="password" type="password" placeholder="Password" ng-model="phform.password" required>
+         </div>
+         </div>
+		 <div ng-show="myForm.password.$touched && myForm.password.$invalid" class="red">The password is required.</div>
+
+<button class="button button-block button-balanced" ng-click="phLogin()" ng-disabled="myForm.$invalid"> Login</button>
+
+
+      </div>
+	  </form>
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar bar-footer bar-light">
+
+  <div class="title" ui-sref="registration">Don't have account ? Register Now!</div>
+</ion-footer-bar>
+</ion-view>

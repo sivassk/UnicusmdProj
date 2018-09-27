@@ -1,0 +1,35 @@
+   <div class="boxone"> <div class="colw50">
+    <div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Diseases
+    </div>
+    <select ng-options="d.disease for d in diseases" ng-model="medi">{{medi.disease}}</select>
+      <!--<option ng-options="d.diseases for d in diseases" ng-click="newFun()"></option>
+      <option selected>Degenerative Joint Disease (Osteoarthritis)</option>
+      <option>Dental Lasers (Lasers in Dental Care)</option>
+	  <option>Testicular Cancer</option>
+	  <option>Deep Skin Infection (Cellulitis)</option>
+	  <option>Telangiectasias (Varicose Veins)</option>
+    </select>-->
+  </label>
+
+</div>   
+   <h1>{{medi.disease}}</h1>
+   <p>The most common types of medicines that doctors use to treat acne include: Benzoyl peroxide, such as Brevoxyl or Triaz.</p></div> 
+   <div class="colw21">
+   <p class="pad5">{{medi.ageGroup}}<p> <p> Patient Age Group </p>
+   </div>
+   <br>
+   <div class="colw21"> <p class="pad4 ">{{medi.visits}}<p> <p>Average Visits</p> </div>
+   </div>
+   <div class="boxone">
+   <div class="colw30 f-l border-right"><p class="fo">{{medi.satisfaction}}<p>
+   <p> High Satisfaction</p></div> 
+   <div class="colw30 border-right"><p class="pad10">{{medi.prescribed}}</p> 
+   <p>More Prescribed</p></div>
+   <div class="colw30 f-l border-right"><p class="pad5">{{medi.other_doctor}}<p> <p> Other Doctor visits</p></div>
+    
+   </div>
+   

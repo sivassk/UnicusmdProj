@@ -1,0 +1,33 @@
+<ion-view view-title="Daily">
+  <ion-content>
+    <ion-list>
+   
+    <div class="card noshadow">
+  
+      <div class="item-divider green " ng-click="showAlert()">
+    <div class="row "> <div class="col text-right ">  <i class="ion-chevron-left "></i></div>  
+    <div class="col col-80 text-center"> August 20, 2016</div> <div class="col text-left"> <i class="ion-chevron-right "></i> </div></div>
+  </div>
+
+     <div class=" appoinment-box text-green">
+  <div class="row"> <div class="col-20">8:00 AM</div><div class="col-75">Blocked</div>  </div> </div>
+  <div class=" appoinment-box ">
+   
+   <div class="row"> <div class="col-20">8:30 AM</div><div class="col-67">Blocked</div>  </div></div>
+  <div class=" appoinment-box">  <div class="row">  <div class="col-20">9:00 AM</div><div class="col-67">OPEN</div>  </div></div>
+    <div class=" appoinment-box">
+    <div class="row">  <div class="col-20">9:30 AM</div><div class="col-67">Blocked</div>  </div></div>
+    <div class=" appoinment-box">
+    <div class="row">  <div class="col-20">10:00 AM</div><div class="col-67">Blocked</div>  </div></div>
+  </div>
+   <script type="text/ng-template" id="modal1.html">
+      <div class="modal">
+        <ion-header-bar>
+          <h1 class="title">Hi, I'm modal #1!</h1>  
+          <div class="buttons"><button class="button button-icon ion-ios7-close-empty" ng-click="closeModal()"></button></div>
+        </ion-header-bar>
+      </div>
+    </script>
+    </ion-list>
+  </ion-content>
+</ion-view>

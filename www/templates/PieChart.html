@@ -1,0 +1,55 @@
+
+<!--<style>
+
+
+ ion-item {
+		font-family: 'trebuchet MS' , 'Lucida sans' , Arial;
+		font-size: 14px;
+		color: #444;
+	<!-- 	font-weight: bold; -->
+ 
+<!--}
+
+</style> -->
+<ion-view cache-view="false" view-title="Patient">
+
+  <!--  <ion-nav-title></ion-nav-title>
+	<ion-nav-bar class="bar-positive nav-title-slide-ios7" class="button-clear">
+	   <ion-nav-back-button>
+      </ion-nav-back-button>
+      </ion-nav-bar> 
+	-->
+	  <ion-content has-bouncing="true">
+	  <div class="row">
+	  
+		<div class="col-75">
+           
+            <div class=" item-text-wrap" style="padding-bottom:0px;padding-top:0px">
+
+
+                <highchart config="chartPie" data="vm.data" class="Chartcenter"></highchart>
+				 <nvd3 options="vm.options" ></nvd3>
+
+            </div>
+           
+        </div>
+	<div>
+	
+	</div>
+  
+	</div><br/><br/>
+	 <div class="card">
+   <div class="item item-text-wrap">
+       Aleve is most used alternative.
+   </div>
+   
+   <div class="item item-text-wrap">
+       Rashes and Ringing in the Ears are most Common Reported side effects.73%
+  users say it worked for them Read more about this drug here.
+   </div>
+</div>
+	<div><p></p>
+	</p></div>
+	</ion-content>
+  
+</ion-view>

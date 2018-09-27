@@ -1,0 +1,17 @@
+<div class="list ">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search"  ng-model="search">
+  </label>
+</div>
+    <div style="width:100%">
+	
+	<div class="onepatient" ng-repeat="d in diseases | filter:search" ng-click="showAlert(d.disease)">
+	<div class="row  divider-bottom "  type="item-text-wrap">
+
+   
+    <div class="col col-90 appoint-text">
+      <div class="noti-text">{{d.disease}}</div>
+      
+    </div>
+  </div></div>

@@ -1,0 +1,42 @@
+<ion-view view-title="Today Appointments">
+  <ion-content>
+  <!--  <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right">
+        <img src="img/patients1.png" class="patient-img">
+        <h2 class="patient-name">Ben Sparrow</h2>
+        <p class="patient-id">Patient ID : 125543</p>
+        <p class="patient-age">Age : 30</p>
+        <p class="patient-msg">Status : Arrived <span><span></p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>-->
+
+ <div class="card noshadow ">
+  
+      <div class="item-divider green nopadding h50"  ng-click="showAlert()">
+    <div class="row "> <div class="col text-right ">  <i class="ion-chevron-left "></i></div>  
+    <div class="col col-80 text-center"> August 20, 2016</div> <div class="col text-left"> <i class="ion-chevron-right "></i> </div></div>
+  </div>
+
+     <div class=" appoinment-box text-green" ng-click="showAlert()">
+  <div class="row"> <div class="col-20">8:00aaa AM</div><div class="col-75">Blocked</div>  </div> </div>
+  <div class=" appoinment-box ">
+   
+   <div class="row"> <div class="col-20">8:30 AM</div><div class="col-67">Blocked</div>  </div></div>
+  <div class=" appoinment-box">  <div class="row">  <div class="col-20">9:00 AM</div><div class="col-67">OPEN</div>  </div></div>
+    <div class=" appoinment-box">
+    <div class="row">  <div class="col-20">9:30 AM</div><div class="col-67">Blocked</div>  </div></div>
+    <div class=" appoinment-box">
+    <div class="row">  <div class="col-20">10:00 AM</div><div class="col-67">Blocked</div>  </div></div>
+
+
+  </div>
+<div class="padding">
+
+  <button class="button button-block button-balanced">
+  Block Appoinment
+</button>
+<button class = "button" ng-click = "showConfirm()">Add Popup Confirm</button>
+</div>
+  </ion-content>
+</ion-view>

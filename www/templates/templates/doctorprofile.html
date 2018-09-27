@@ -1,0 +1,40 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+
+
+<ion-view view-title="Review" name="" class="noborder-bottom">
+  <a class="button icon icon-right ion-chevron-right" href="#/tab/home">Go To Page With Tabs</a>
+  <ion-content>
+<div class="green item item-avatar">
+      <img src="img/patients1.png" class="doctor-img">
+      <h2>John Smith, MD</h2>
+      <p> <i class="icon ion-android-add-circle small-size"></i> <span>internalMedicine</span> </p>
+       <p> <i class="icon ion-ios-location-outline small-size"></i> <span>Overtake Hospital Medical center Bellevue, WA 98007
+       </span></p>
+   
+</div>
+
+
+<div class="list">
+
+     <a class="item item-icon-left boxpadding" ui-sref="appoiment">
+    <i class="icon ion-android-calendar light-gray"></i>
+  Book an Appoinment </a>
+
+  
+   <a class="item item-icon-left boxpadding" ui-sref="videochat">
+    <i class="icon ion-ios-telephone-outline light-gray"></i>
+ Phone (or) Video Consultation
+  </a>
+   <a class="item item-icon-left boxpadding" ui-sref="doctorreview">
+    <i class="icon ion-clipboard light-gray"></i>
+ 
+Reviews
+  </a>
+</div>
+  </ion-content>
+</ion-view>

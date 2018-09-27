@@ -1,0 +1,24 @@
+   <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search"  ng-model="search" ng-keyup="getValue()">
+  </label>
+   <div class="item item-divider"  ng-repeat="patient in result | filter:search" ng-click="getMed('{{patient.id}}')"> {{patient.name}}</div>
+      <div class="boxone"> <div class="colw50"> 
+   <h1>{{med.name ?med.name : "Brevoxyl"}}</h1>
+   <p>The most common types of medicines that doctors use to treat acne include: {{med.name ?med.name : "Brevoxyl"}}, such as {{med.name ?med.name : "Brevoxyl"}} or {{med.alternative ? med.alternative : "Panoxyl"}}.</p></div> <div class="colw21"><p class="pad2">{{med.satisfied ? med.satisfied : "50"}}%</p> <p>Satisfied</p></div>
+   <br>
+   <div class="colw21"><p class="pad3">{{med.sideeffect ? med.sideeffect : "6"}}%</p> <p>Side Effect</p></div>
+   </div>
+   <div class="boxone">
+   <div class="colw30 border-right"><p class="pad4">{{med.samedisease ? med.samedisease : "10"}}%</p> <p>Same Disease</p></div> <div class="colw30 border-right"><p class="pad5">{{med.betteralternative ? med.betteralternative : "25"}}%</p> <p> Better Alternative </p></div>
+   <div class="colw30 f-l border-right"><p class="fo">{{med.alternative ? med.alternative : "Panoxyl"}}</p> <p> Alternative Drug</p></div>
+   
+
+	
+   </div>
+   <div class="row"> <div class="col col-50"> <button class="button button-block button-balanced" ui-sref="tab.medicine.patient">
+  Patients
+</button></div> <div class="col col-50"> <button class="button button-block button-dark" ui-sref="tab.medicine.disease">
+ Diseases
+</button></div></div> 
+   </div>
